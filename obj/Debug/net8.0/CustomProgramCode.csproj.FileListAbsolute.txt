@@ -1,0 +1,14 @@
+D:\Deakin\SIT771_OOP\CustomProgramCode\bin\Debug\net8.0\CustomProgramCode.exe
+D:\Deakin\SIT771_OOP\CustomProgramCode\bin\Debug\net8.0\CustomProgramCode.deps.json
+D:\Deakin\SIT771_OOP\CustomProgramCode\bin\Debug\net8.0\CustomProgramCode.runtimeconfig.json
+D:\Deakin\SIT771_OOP\CustomProgramCode\bin\Debug\net8.0\CustomProgramCode.dll
+D:\Deakin\SIT771_OOP\CustomProgramCode\bin\Debug\net8.0\CustomProgramCode.pdb
+D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\CustomProgramCode.GeneratedMSBuildEditorConfig.editorconfig
+D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\CustomProgramCode.AssemblyInfoInputs.cache
+D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\CustomProgramCode.AssemblyInfo.cs
+D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\CustomProgramCode.csproj.CoreCompileInputs.cache
+D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\CustomProgramCode.dll
+D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\refint\CustomProgramCode.dll
+D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\CustomProgramCode.pdb
+D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\CustomProgramCode.genruntimeconfig.cache
+D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\ref\CustomProgramCode.dll
