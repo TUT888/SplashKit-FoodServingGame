@@ -41,7 +41,7 @@ public class Chip : Food {
 public class Nugget : Food {
     public Nugget() {
         _FoodBitmap = new Bitmap("Nugget", "resources/images/Nugget.png");
-        _MiniFoodBitmap = new Bitmap("MiniChip", "resources/images/MiniNugget.png");
+        _MiniFoodBitmap = new Bitmap("MiniNugget", "resources/images/MiniNugget.png");
         Name = "Nugget";
         Price = 2;
     }

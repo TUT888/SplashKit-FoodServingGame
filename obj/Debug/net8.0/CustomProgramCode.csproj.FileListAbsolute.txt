@@ -12,3 +12,4 @@ D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\refint\CustomProgramCode
 D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\CustomProgramCode.pdb
 D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\CustomProgramCode.genruntimeconfig.cache
 D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\ref\CustomProgramCode.dll
+D:\Deakin\SIT771_OOP\CustomProgramCode\obj\Debug\net8.0\CustomProgramCode.sourcelink.json

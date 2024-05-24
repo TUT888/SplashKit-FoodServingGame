@@ -1,7 +1,7 @@
 using System;
 using SplashKitSDK;
 
-namespace TutorialGame
+namespace CustomeProgramCode
 {
     public class Program
     {
@@ -9,7 +9,7 @@ namespace TutorialGame
         {
             Window gameWindow = new Window("Game Window", 800, 700);
             
-            CookingDashGame cookingDashGame = new CookingDashGame(gameWindow);
+            FoodServingGame cookingDashGame = new FoodServingGame(gameWindow);
             while ( !cookingDashGame.Quit ) {
                 SplashKit.ProcessEvents();
 
@@ -25,7 +25,7 @@ namespace TutorialGame
             
             Console.WriteLine($"Time record:    {cookingDashGame.TimeRecord} second(s)");
             Console.WriteLine($"Total Serve:    {cookingDashGame.TotalServe} serve(s)");
-            Console.WriteLine($"Total Earn:     {cookingDashGame.TotalEarn} $");
+            Console.WriteLine($"Total Earn:     ${cookingDashGame.TotalEarn}");
         }
     }
 }

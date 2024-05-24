@@ -174,8 +174,8 @@ public class Player {
     }
 
     public void DrawProgress(Window gameWindow) {
-        SplashKit.DrawText($"TimeRecord: {TimeRecord}", SplashKitSDK.Color.Black, "BOLD_FONT", 12, gameWindow.Width/2-100, 20);
-        SplashKit.DrawText($"Total serve: {TotalServe}", SplashKitSDK.Color.Black, "BOLD_FONT", 12, gameWindow.Width/2-100, 40);
-        SplashKit.DrawText($"Total earn: {TotalEarn}", SplashKitSDK.Color.Black, "BOLD_FONT", 12, gameWindow.Width/2-100, 60);
+        SplashKit.DrawText($"TimeRecord: {TimeRecord} second(s)", SplashKitSDK.Color.Black, "BOLD_FONT", 15, gameWindow.Width/2-100, 20);
+        SplashKit.DrawText($"Total serve: {TotalServe} serve", SplashKitSDK.Color.Black, "BOLD_FONT", 15, gameWindow.Width/2-100, 40);
+        SplashKit.DrawText($"Total earn: ${TotalEarn}", SplashKitSDK.Color.Black, "BOLD_FONT", 15, gameWindow.Width/2-100, 60);
     }
 }

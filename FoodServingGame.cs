@@ -1,6 +1,6 @@
 using SplashKitSDK;
 
-public class CookingDashGame {
+public class FoodServingGame {
     private Player _Player;
     private Customer _Customer;
     private Window _GameWindow;
@@ -22,7 +22,7 @@ public class CookingDashGame {
     private Bench _PlateBench;
     private Bin _Bin;
 
-    public CookingDashGame(Window gameWindow) {
+    public FoodServingGame(Window gameWindow) {
         _GameWindow = gameWindow;
         _GameTimer = new SplashKitSDK.Timer("Game Timer");
         _GameTimer.Start();
