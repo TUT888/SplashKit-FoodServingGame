@@ -16,7 +16,7 @@ public class Player {
     public int TimeRecord { get; private set; }
     public double TotalEarn { get; private set; }
 
-    //
+    // Special fiels for Food Serving game
     public Food HoldingFood { get; set; } = null;
     public Drink HoldingDrink { get; set; } = null;
     public Plate HoldingPlate { get; set; } = null;
@@ -75,7 +75,32 @@ public class Player {
         }
     }
 
-    // Overloadding methods for checking interaction
+
+    // Let the player stayed in the kitchen
+    public void StayOnArea(int[] limitArea) {
+        // Define the gap between player and window frames
+        const int GAP = 10;
+        int GAP_left = limitArea[0] + GAP;
+        int GAP_top = limitArea[1] + GAP;
+        int GAP_right = limitArea[2] - GAP;
+        int GAP_bottom = limitArea[3] - GAP;
+
+        // Keep the player in the window
+        if ( X < GAP_left ) {
+            X = GAP_left;
+        }
+        if ( (X+Width) > GAP_right ) {
+            X = GAP_right - Width;
+        }
+        if ( Y < GAP_top ) {
+            Y = GAP_top;
+        }
+        if ( (Y+Height) > GAP_bottom ) {
+            Y = GAP_bottom - Height;
+        }
+    }
+
+    // ====== Overloadding methods for checking interaction ====== //
     public bool CheckInteract(Bench bench) {
         // Check if the item fall on the player
         return _PlayerBitmap.CircleCollision(X, Y, bench.CollisionCircle);
@@ -91,7 +116,7 @@ public class Player {
         return _PlayerBitmap.CircleCollision(X, Y, bin.CollisionCircle);
     }
 
-    // Overloadding methods for handling interaction
+    // ====== Overloadding methods for handling interaction ====== //
     public void HandleFoodInteraction(Bench bench) {
         if ( SplashKit.KeyDown(KeyCode.AKey) ) {
             // Only hold food/drink when not holding plate
@@ -130,6 +155,7 @@ public class Player {
         }
     }
 
+    // ====== Serving food -> Check if it is the same ====== //
     public bool ServeFood(Customer customer) {
         if ( SplashKit.KeyDown(KeyCode.AKey) ) {
             if ( customer.checkOrder(HoldingPlate) ) {
@@ -138,30 +164,7 @@ public class Player {
         }
         return false;
     }
-
-    public void StayOnArea(int[] limitArea) {
-        // Define the gap between player and window frames
-        const int GAP = 10;
-        int GAP_left = limitArea[0] + GAP;
-        int GAP_top = limitArea[1] + GAP;
-        int GAP_right = limitArea[2] - GAP;
-        int GAP_bottom = limitArea[3] - GAP;
-
-        // Keep the player in the window
-        if ( X < GAP_left ) {
-            X = GAP_left;
-        }
-        if ( (X+Width) > GAP_right ) {
-            X = GAP_right - Width;
-        }
-        if ( Y < GAP_top ) {
-            Y = GAP_top;
-        }
-        if ( (Y+Height) > GAP_bottom ) {
-            Y = GAP_bottom - Height;
-        }
-    }
-
+    
     public void updateScore() {
         TotalServe += 1;
         TotalEarn += HoldingPlate._Price;
@@ -169,6 +172,7 @@ public class Player {
         HoldingPlate = null;
     }
 
+    // ====== Updating game progress ====== //
     public void UpdateProgress(SplashKitSDK.Timer timer) {
         TimeRecord = Convert.ToInt32(timer.Ticks / 1000);
     }

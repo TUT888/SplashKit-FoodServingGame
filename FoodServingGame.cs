@@ -1,26 +1,26 @@
 using SplashKitSDK;
 
 public class FoodServingGame {
+    // The player and customer
     private Player _Player;
+    private int[] _PlayerArea;
     private Customer _Customer;
+    // Kitchen objects to get food
+    private Bench _ChipFoodBench;
+    private Bench _NuggetFoodBench;
+    private Bench _CocaColaDrinkBench;
+    private Bench _CoffeeDrinkBench;
+    private Bench _PlateBench;
+    // The bin to discard wrong food combination
+    private Bin _Bin;
+
     private Window _GameWindow;
-    // private List<Item> _Items;
     public bool Quit { get { return _Player.Quit; } }
     private SplashKitSDK.Timer _GameTimer;
     public int TimeRecord { get { return _Player.TimeRecord; } }
     public int TotalServe { get { return _Player.TotalServe; } }
     public double TotalEarn { get { return _Player.TotalEarn; } }
 
-    // New
-    private int[] _PlayerArea;
-
-    // Kitchen objects
-    private Bench _ChipFoodBench;
-    private Bench _NuggetFoodBench;
-    private Bench _CocaColaDrinkBench;
-    private Bench _CoffeeDrinkBench;
-    private Bench _PlateBench;
-    private Bin _Bin;
 
     public FoodServingGame(Window gameWindow) {
         _GameWindow = gameWindow;
@@ -29,9 +29,12 @@ public class FoodServingGame {
 
         // Initialize Player
         _Player = new Player(_GameWindow);
+        // Restriction on the area the player can move
         _PlayerArea = [100, 0, _GameWindow.Width-200, _GameWindow.Height]; //startX startY endX endY
+
         // Initialize Customer
         _Customer = new Customer(_GameWindow);
+
         // Initialize Food bench
         _ChipFoodBench = new Bench(_GameWindow, 0, 0, "Chip");
         _NuggetFoodBench = new Bench(_GameWindow, 0, 120, "Nugget");
@@ -55,6 +58,7 @@ public class FoodServingGame {
     public void Draw() {
         _GameWindow.Clear(Color.White);
 
+        // Draw the table
         SplashKit.FillRectangle(
             SplashKitSDK.Color.SandyBrown, 
             _PlayerArea[2], 0, 

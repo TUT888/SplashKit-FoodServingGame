@@ -9,13 +9,13 @@ namespace CustomeProgramCode
         {
             Window gameWindow = new Window("Game Window", 800, 700);
             
-            FoodServingGame cookingDashGame = new FoodServingGame(gameWindow);
-            while ( !cookingDashGame.Quit ) {
+            FoodServingGame foodServingGame = new FoodServingGame(gameWindow);
+            while ( !foodServingGame.Quit ) {
                 SplashKit.ProcessEvents();
 
-                cookingDashGame.HandleInput();
-                cookingDashGame.Update();
-                cookingDashGame.Draw();
+                foodServingGame.HandleInput();
+                foodServingGame.Update();
+                foodServingGame.Draw();
 
                 if ( gameWindow.CloseRequested ) {
                     break;
@@ -23,9 +23,9 @@ namespace CustomeProgramCode
             }
             gameWindow.Close();
             
-            Console.WriteLine($"Time record:    {cookingDashGame.TimeRecord} second(s)");
-            Console.WriteLine($"Total Serve:    {cookingDashGame.TotalServe} serve(s)");
-            Console.WriteLine($"Total Earn:     ${cookingDashGame.TotalEarn}");
+            Console.WriteLine($"Time record:    {foodServingGame.TimeRecord} second(s)");
+            Console.WriteLine($"Total Serve:    {foodServingGame.TotalServe} serve(s)");
+            Console.WriteLine($"Total Earn:     ${foodServingGame.TotalEarn}");
         }
     }
 }
