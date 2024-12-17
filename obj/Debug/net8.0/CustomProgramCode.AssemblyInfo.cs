@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CustomProgramCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52ea8c1c7ad18062bd9ed111307c479e1d10202a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc2f1db9529adba95c26aa66fa18ac378c8643d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CustomProgramCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CustomProgramCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

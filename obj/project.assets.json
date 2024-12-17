@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Deakin\\SIT771_OOP\\CustomProgramCode\\CustomProgramCode.csproj",
+      "projectUniqueName": "H:\\TMP\\SplashKit-FoodServingGame\\CustomProgramCode.csproj",
       "projectName": "CustomProgramCode",
-      "projectPath": "D:\\Deakin\\SIT771_OOP\\CustomProgramCode\\CustomProgramCode.csproj",
+      "projectPath": "H:\\TMP\\SplashKit-FoodServingGame\\CustomProgramCode.csproj",
       "packagesPath": "C:\\Users\\tatta\\.nuget\\packages\\",
-      "outputPath": "D:\\Deakin\\SIT771_OOP\\CustomProgramCode\\obj\\",
+      "outputPath": "H:\\TMP\\SplashKit-FoodServingGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tatta\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
